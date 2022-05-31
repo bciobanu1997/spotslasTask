@@ -15,7 +15,7 @@ class DescriptionText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String spaces(n) => new List.filled(n + 1, ' ').join();
+    String spaces(n) => List.filled(n + 1, ' ').join();
     return Padding(
       padding: const EdgeInsets.only(left: Constant.s, right: Constant.s),
       child: Stack(children: [

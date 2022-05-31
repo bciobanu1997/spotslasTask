@@ -179,13 +179,13 @@ class Media {
   factory Media.fromJson(Map<String, dynamic> json) => Media(
         url: json["url"],
         type: mediaTypeValues.map![json["type"]],
-        blurHash: json["blur_hash"] == null ? null : json["blur_hash"],
+        blurHash: json["blur_hash"],
       );
 
   Map<String, dynamic> toJson() => {
         "url": url,
         "type": mediaTypeValues.reverse![type],
-        "blur_hash": blurHash == null ? null : blurHash,
+        "blur_hash": blurHash,
       };
 }
 
@@ -306,9 +306,7 @@ class EnumValues<T> {
   EnumValues(this.map);
 
   Map<T, String>? get reverse {
-    if (reverseMap == null) {
-      reverseMap = map!.map((k, v) => new MapEntry(v, k));
-    }
+    reverseMap ??= map!.map((k, v) => MapEntry(v, k));
     return reverseMap;
   }
 }

@@ -15,7 +15,7 @@ class PostDateTime extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(right: Constant.s, left: Constant.s),
+      padding: const EdgeInsets.only(right: Constant.s, left: Constant.s),
       child: AppTextStyle(
         text:
             '${Constant.date.difference(userModel.createdAt!).inDays} days ago',

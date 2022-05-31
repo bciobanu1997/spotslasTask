@@ -9,7 +9,7 @@ class PhotoCarousel extends StatelessWidget {
   UserModel userModel;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: 450,
       child: Stack(children: [

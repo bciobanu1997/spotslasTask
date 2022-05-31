@@ -11,7 +11,7 @@ import 'package:spotlastask/widgets/constant.dart';
 import 'buttons_bar/buttons_bar.dart';
 
 class FeedBuilder extends StatelessWidget {
-  FeedBuilder({Key? key}) : super(key: key);
+  const FeedBuilder({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     UsersViewModel usersViewModel = context.watch<UsersViewModel>();
@@ -32,7 +32,7 @@ class FeedBuilder extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     PhotoCarousel(userModel: userModel),
-                    ButtonsBar(),
+                    const ButtonsBar(),
                     DescriptionText(userModel: userModel),
                     TagsBuilder(userModel: userModel),
                     PostDateTime(userModel: userModel),

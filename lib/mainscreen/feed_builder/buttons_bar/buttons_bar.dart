@@ -13,7 +13,7 @@ class ButtonsBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding:
-          EdgeInsets.symmetric(vertical: Constant.m, horizontal: Constant.xxl),
+          const EdgeInsets.symmetric(vertical: Constant.m, horizontal: Constant.xxl),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
